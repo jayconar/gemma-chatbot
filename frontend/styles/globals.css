@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: Verdana, Geneva, Tahoma, sans-serif;
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #292c2f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4a4d50;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a5d60;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #4a4d50 #292c2f;
+}
+
+.react-markdown {
+  line-height: 1.6;
+}
+
+.react-markdown p {
+  margin-bottom: 1em;
+}
+
+.react-markdown strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+.react-markdown em {
+  font-style: italic;
+}
+
+.react-markdown ul, 
+.react-markdown ol {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.react-markdown li {
+  margin-bottom: 0.5em;
+}
