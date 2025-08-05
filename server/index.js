@@ -12,7 +12,7 @@ const chatRoutes = require('./routes/chatRoutes');
 app.use('/api/chat', chatRoutes);
 
 app.get('/', (req, res) => {
-  res.send('Gemma ChatBot Backend is running! ✅');
+  res.send('Gemma ChatBot Backend is running!');
 });
 
 app.listen(PORT, () => {
